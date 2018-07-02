@@ -1,0 +1,133 @@
+* { 
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	color: #fff;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	box-sizing: border-box;
+}
+.container {
+	width: 70rem;
+	margin: 0 auto;
+}
+header {
+	background-color:#424961;
+	position: relative;
+}
+h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	padding: 2rem 0;
+	line-height: 1.3;
+}
+.btn {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: 400; 
+	line-height: 1;
+	color: #fff;
+	padding: 1.4rem 1.6rem;
+	background-color: #60bfad;
+	border: none;
+
+}
+.btn:hover {
+	background-color: #fff;
+	color: #60bfad;
+}
+.active,
+.active:hover {
+	background-color: #fff;
+	font-weight: 500; 
+	color: #424961;
+}
+.item {
+	width: 100%;
+	background-color: #fff;
+	margin-top: 3rem;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, .05);
+	vertical-align: top;
+}
+.item:hover {
+	transform: translateX(1px);
+	border-color: rgba(0, 0, 0, .1);
+	border-right-color:#60bfad;
+	border-bottom-color:#60bfad;
+}
+.item:first-of-type {
+	margin-top: 4.2rem;
+}
+.item:last-of-type {
+	margin-bottom: 3rem;
+}
+.item-content-type {
+	position: absolute;
+	top: -2rem;
+	right: -.1rem;
+	width: 5rem;
+	text-align: center;
+	padding: .5rem 0;
+	color:#424961;
+}
+.link {
+	background-color: #dfe2f2;
+}
+.img {
+	background-color: #cfebe6;
+}
+.video {
+	background-color: #f2dfe2;
+}
+.text {
+	background-color: #f2eedf;
+}
+.link::before {
+	content:"link";
+}
+.img::before {
+	content:"image";
+}
+.video::before {
+	content:"video";
+}
+.text::before {
+	content:"text";
+}
+.item-title {
+	padding: 1.45rem 1rem 1.45rem 1rem;
+}
+
+.item-title a {
+	color:#545b70;
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.5714;
+}
+
+.item:hover .item-title a,
+.item:hover .item-content-type {
+	color:#1a1a1a;
+}
+.clear {
+	font-size: 0;
+	clear: both;
+}
+.thumbnail {
+	float:left;
+	width: 7.1rem;
+	height: 7.1rem;
+	background-size: cover;
+	margin: 0 1rem 0 0;
+	border-right: 1px solid rgba(0, 0, 0, .05);
+}
+@media (max-width: 748px){
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0 24px;
+	}
+}
